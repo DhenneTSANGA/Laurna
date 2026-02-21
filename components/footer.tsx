@@ -9,14 +9,15 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="inline-block">
-              <Image 
-                src="/logo1.png" 
-                alt="Logo Laurnae" 
-                width={80} 
-                height={80} 
-                className="h-20 w-auto opacity-90 transition-opacity hover:opacity-100"
-              />
+            <Link href="/" className="group mb-6 inline-block">
+              <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-white/10 transition-transform group-hover:scale-105">
+                <Image 
+                  src="/laurnalogo.jpeg" 
+                  alt="Logo Laurnae" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </Link>
             <p className="mt-4 text-sm leading-relaxed opacity-70">
               {"Votre experte en onglerie. Qualité, précision et créativité au service de vos ongles."}

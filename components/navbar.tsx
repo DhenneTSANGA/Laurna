@@ -30,15 +30,16 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 md:py-4">
-        <Link href="/" className="flex items-center gap-2">
-          <Image 
-            src="/logo1.png" 
-            alt="Logo Laurnae" 
-            width={60} 
-            height={60} 
-            className="h-20 w-auto md:h-16"
-            priority
-          />
+        <Link href="/" className="group relative flex items-center justify-center">
+          <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-border transition-transform group-hover:scale-105 md:h-20 md:w-20">
+            <Image 
+              src="/laurnalogo.jpeg" 
+              alt="Logo Laurnae" 
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop navigation */}
