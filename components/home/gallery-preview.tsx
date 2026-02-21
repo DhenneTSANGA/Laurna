@@ -58,7 +58,10 @@ export function GalleryPreview() {
               whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               onClick={() => setLightboxVideo(video.src)}
-              className="group relative aspect-square overflow-hidden rounded-2xl cursor-pointer"
+              className="group relative aspect-square overflow-hidden rounded-2xl cursor-pointer touch-manipulation"
+              role="button"
+              aria-label={`Voir la vidéo : ${video.alt}`}
+              tabIndex={0}
             >
               <video
                 src={video.src}
@@ -67,6 +70,7 @@ export function GalleryPreview() {
                 loop
                 playsInline
                 autoPlay
+                preload="metadata"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/20">
                 <Play className="h-10 w-10 text-background opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 fill-current" />

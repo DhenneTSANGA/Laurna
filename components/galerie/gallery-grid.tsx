@@ -74,9 +74,10 @@ export function GalleryGrid() {
                   delay: (index % 3) * 0.1 
                 }}
                 onClick={() => setLightboxVideo(item.videoSrc)}
-                className="group relative aspect-square overflow-hidden rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                className="group relative aspect-square overflow-hidden rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 touch-manipulation"
+                aria-label={`Voir la vidéo : ${item.alt}`}
               >
-                {/* Video Preview - usually a muted, loop video for the card */}
+                {/* Video Preview - Optimized for mobile */}
                 <video
                   src={item.videoSrc}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -84,6 +85,7 @@ export function GalleryGrid() {
                   loop
                   playsInline
                   autoPlay
+                  preload="metadata"
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/30">
                   <div className="bg-primary/80 p-4 rounded-full opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">

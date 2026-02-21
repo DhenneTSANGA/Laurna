@@ -74,7 +74,7 @@ export function Navbar() {
           {/* Mobile menu toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="relative z-50 p-2 text-foreground md:hidden"
+            className="relative z-50 p-3 -mr-2 text-foreground md:hidden touch-manipulation cursor-pointer"
             aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
           >
           <AnimatePresence mode="wait">
