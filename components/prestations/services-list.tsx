@@ -17,7 +17,7 @@ const services = [
     title: "Pose Gel",
     description:
       "Application de gel UV sur ongle naturel pour un r\u00e9sultat brillant, solide et longue dur\u00e9e. Choix de couleurs et finitions personnalis\u00e9es.",
-    price: "\u00c0 partir de 45\u00a0\u20ac",
+    price: "\u00c0 partir de 3000 fcfa",
     duration: "1h30",
   },
   {
@@ -25,7 +25,7 @@ const services = [
     title: "Extensions",
     description:
       "Allongement des ongles avec capsules ou chablons pour une longueur parfaite. Id\u00e9al pour celles qui souhaitent des ongles longs et \u00e9l\u00e9gants.",
-    price: "\u00c0 partir de 55\u00a0\u20ac",
+    price: "\u00c0 partir de 3500 fcfa",
     duration: "2h",
   },
   {
@@ -33,7 +33,7 @@ const services = [
     title: "Nail Art",
     description:
       "Designs cr\u00e9atifs et personnalis\u00e9s : motifs floraux, g\u00e9om\u00e9triques, strass, chromes et plus encore. Exprimez votre style unique.",
-    price: "\u00c0 partir de 5\u00a0\u20ac / ongle",
+    price: "\u00c0 partir de 2500 fcfa / ongle",
     duration: "Variable",
   },
   {
@@ -41,7 +41,7 @@ const services = [
     title: "Remplissage",
     description:
       "Entretien de votre pose existante pour la garder impeccable. Recommand\u00e9 toutes les 3 \u00e0 4 semaines.",
-    price: "\u00c0 partir de 35\u00a0\u20ac",
+    price: "\u00c0 partir de 2000 fcfa",
     duration: "1h",
   },
   {
@@ -49,7 +49,7 @@ const services = [
     title: "Manucure",
     description:
       "Soin complet des mains : limage, cuticules, gommage et application vernis. Des mains soign\u00e9es et sublim\u00e9es.",
-    price: "\u00c0 partir de 25\u00a0\u20ac",
+    price: "\u00c0 partir de 2000 fcfa",
     duration: "45min",
   },
   {
@@ -57,7 +57,7 @@ const services = [
     title: "P\u00e9dicure",
     description:
       "Soin complet des pieds : gommage, soin des cuticules, limage et vernis. Prenez soin de vos pieds.",
-    price: "\u00c0 partir de 30\u00a0\u20ac",
+    price: "\u00c0 partir de 3000 fcfa",
     duration: "1h",
   },
 ]

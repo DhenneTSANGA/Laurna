@@ -72,7 +72,7 @@ export function AProposContent() {
             >
               <Image
                 src="/laurna.jpg"
-                alt="Laurnae, fondatrice"
+                alt="laurna, fondatrice"
                 fill
                 className="object-cover"
               />
@@ -85,7 +85,7 @@ export function AProposContent() {
                 transition={{ duration: 0.8 }}
                 className="font-serif text-3xl text-foreground md:text-4xl"
               >
-                {"L\u2019histoire de Laurnae"}
+                {"L\u2019histoire de laurna"}
               </motion.h2>
               <div className="mt-6 flex flex-col gap-4 leading-relaxed text-muted-foreground">
                 <motion.p
@@ -94,7 +94,7 @@ export function AProposContent() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  {"Passionn\u00e9e par la beaut\u00e9 et l\u2019art des ongles depuis toujours, Laurnae a transform\u00e9 cette passion en un v\u00e9ritable m\u00e9tier d\u2019excellence. Form\u00e9e aux meilleures techniques de l\u2019onglerie moderne, elle met son savoir-faire au service de chaque cliente."}
+                  {"Passionn\u00e9e par la beaut\u00e9 et l\u2019art des ongles depuis toujours, laurna a transform\u00e9 cette passion en un v\u00e9ritable m\u00e9tier d\u2019excellence. Form\u00e9e aux meilleures techniques de l\u2019onglerie moderne, elle met son savoir-faire au service de chaque cliente."}
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -102,7 +102,7 @@ export function AProposContent() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                  {"Laurnae \u00c9clat d\u2019Ongles est n\u00e9e de la volont\u00e9 d\u2019offrir une exp\u00e9rience unique : un moment de d\u00e9tente o\u00f9 chaque femme peut se sentir belle et valoris\u00e9e. Chaque rendez-vous est une cr\u00e9ation sur mesure."}
+                  {"laurna \u00c9clat d\u2019Ongles est n\u00e9e de la volont\u00e9 d\u2019offrir une exp\u00e9rience unique : un moment de d\u00e9tente o\u00f9 chaque femme peut se sentir belle et valoris\u00e9e. Chaque rendez-vous est une cr\u00e9ation sur mesure."}
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -110,7 +110,7 @@ export function AProposContent() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  {"Active sur Instagram et TikTok, Laurnae partage r\u00e9guli\u00e8rement ses cr\u00e9ations et inspire une communaut\u00e9 grandissante de passionn\u00e9es. Sa vision\u2009: rendre l\u2019onglerie accessible, cr\u00e9ative et toujours plus belle."}
+                  {"Active sur Instagram et TikTok, laurna partage r\u00e9guli\u00e8rement ses cr\u00e9ations et inspire une communaut\u00e9 grandissante de passionn\u00e9es. Sa vision\u2009: rendre l\u2019onglerie accessible, cr\u00e9ative et toujours plus belle."}
                 </motion.p>
               </div>
             </div>
@@ -181,7 +181,7 @@ export function AProposContent() {
             {"Envie de sublimer vos ongles\u2009?"}
           </h2>
           <p className="mt-4 text-muted-foreground">
-            {"Prenez rendez-vous et d\u00e9couvrez par vous-m\u00eame l\u2019exp\u00e9rience Laurnae."}
+            {"Prenez rendez-vous et d\u00e9couvrez par vous-m\u00eame l\u2019exp\u00e9rience laurna."}
           </p>
           <Link
             href="/reservation"

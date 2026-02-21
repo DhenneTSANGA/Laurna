@@ -5,7 +5,7 @@ import { CalendarDays, Clock, CheckCircle2 } from "lucide-react"
 export const metadata: Metadata = {
   title: "R\u00e9servation",
   description:
-    "R\u00e9servez votre rendez-vous d\u2019onglerie chez Laurnae \u00c9clat d\u2019Ongles. Pose gel, extensions, nail art et plus encore.",
+    "R\u00e9servez votre rendez-vous d\u2019onglerie chez laurna \u00c9clat d\u2019Ongles. Pose gel, extensions, nail art et plus encore.",
 }
 
 const steps = [

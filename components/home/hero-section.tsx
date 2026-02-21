@@ -17,7 +17,7 @@ export function HeroSection() {
       >
         <Image
           src="/hero-nails.jpg"
-          alt="Ongles magnifiques par Laurnae"
+          alt="Ongles magnifiques par laurna"
           fill
           className="object-cover"
           priority
@@ -50,7 +50,7 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="mt-6 max-w-lg text-lg leading-relaxed text-background/80"
           >
-            {"D\u00e9couvrez un univers de cr\u00e9ativit\u00e9 et d\u2019\u00e9l\u00e9gance. Pose gel, extensions, nail art\u2009\u2014\u2009sublimez vos mains avec Laurnae."}
+            {"D\u00e9couvrez un univers de cr\u00e9ativit\u00e9 et d\u2019\u00e9l\u00e9gance. Pose gel, extensions, nail art\u2009\u2014\u2009sublimez vos mains avec Laurna."}
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

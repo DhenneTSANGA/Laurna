@@ -5,26 +5,26 @@ import { Phone, Mail, MapPin, Instagram, Clock } from "lucide-react"
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Laurnae \u00c9clat d\u2019Ongles. T\u00e9l\u00e9phone, email, r\u00e9seaux sociaux ou formulaire de contact.",
+    "Contactez laurna \u00c9clat d\u2019Ongles. T\u00e9l\u00e9phone, email, r\u00e9seaux sociaux ou formulaire de contact.",
 }
 
 const contactInfo = [
   {
     icon: Phone,
     label: "T\u00e9l\u00e9phone",
-    value: "+33 6 12 34 56 78",
-    href: "tel:+33612345678",
+    value: "+241 077 00 00 00",
+    href: "tel:+2411077000000",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "contact@laurnae.fr",
-    href: "mailto:contact@laurnae.fr",
+    value: "contact@laurna.fr",
+    href: "mailto:contact@laurna.fr",
   },
   {
     icon: MapPin,
     label: "Zone d\u2019activit\u00e9",
-    value: "Paris et \u00cele-de-France",
+    value: "Libreville, Derriere la prison",
     href: null,
   },
   {
@@ -94,7 +94,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="mt-4 flex gap-4">
                   <a
-                    href="https://instagram.com"
+                    href="ttps://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40laurnaclatdongle%3F_r%3D1%26_t%3DZS-93OHhpYbfhl%26fbclid%"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-full border border-border transition-colors hover:bg-primary/10 hover:text-primary"
@@ -103,7 +103,7 @@ export default function ContactPage() {
                     <Instagram className="h-5 w-5" />
                   </a>
                   <a
-                    href="https://tiktok.com"
+                    href="https://www.tiktok.com/link/v2?aid=1988&lang=fr&scene=bio_url&target=https%3A%2F%2Fwww.instagram.com%2Flaurnaclatdongles%3Figsh%3DMXgxeHY3bXdxenlrcw%253D%253D%26utm_source%3Dqr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-full border border-border transition-colors hover:bg-primary/10 hover:text-primary"
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localisation Laurnae"
+                  title="Localisation laurna"
                 />
               </div>
             </div>

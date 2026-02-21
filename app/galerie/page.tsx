@@ -5,7 +5,7 @@ import { GalerieHeader } from "@/components/galerie/galerie-header"
 export const metadata: Metadata = {
   title: "Galerie",
   description:
-    "D\u00e9couvrez nos r\u00e9alisations : pose gel, nail art, extensions et plus encore. Galerie photos de Laurnae \u00c9clat d\u2019Ongles.",
+    "D\u00e9couvrez nos r\u00e9alisations : pose gel, nail art, extensions et plus encore. Galerie photos de laurna \u00c9clat d\u2019Ongles.",
 }
 
 export default function GaleriePage() {

@@ -26,11 +26,11 @@ const parisienne = Parisienne({
 
 export const metadata: Metadata = {
   title: {
-    default: "Laurnae Éclat d'Ongles | Onglerie Professionnelle",
-    template: "%s | Laurnae Éclat d'Ongles",
+    default: "laurna Éclat d'Ongles | Onglerie Professionnelle",
+    template: "%s | laurna Éclat d'Ongles",
   },
   description:
-    "Laurnae Éclat d'Ongles - Votre experte en onglerie : pose gel, extensions, nail art, manucure et pédicure. Réservez votre rendez-vous dès maintenant.",
+    "laurna Éclat d'Ongles - Votre experte en onglerie : pose gel, extensions, nail art, manucure et pédicure. Réservez votre rendez-vous dès maintenant.",
   keywords: [
     'onglerie',
     'pose gel',
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     'extensions ongles',
     'manucure',
     'pédicure',
-    'Laurnae',
+    'laurna',
   ],
   openGraph: {
-    title: "Laurnae Éclat d'Ongles",
+    title: "laurna Éclat d'Ongles",
     description: 'Onglerie professionnelle - Pose gel, extensions, nail art',
     type: 'website',
   },

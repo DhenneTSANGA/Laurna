@@ -111,7 +111,7 @@ export function GalleryGrid() {
           <p className="text-muted-foreground">
             {"Retrouvez encore plus de réalisations sur "}
             <a
-              href="https://instagram.com"
+              href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40laurnaeclatdongle%3F_r%3D1%26_t%3DZS-93OHhpYbfhl%26fbclid%"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-primary underline underline-offset-4"

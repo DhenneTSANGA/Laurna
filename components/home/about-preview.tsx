@@ -19,7 +19,7 @@ export function AboutPreview() {
           >
             <Image
               src="/ongles2.jpg"
-              alt="Laurnae, fondatrice"
+              alt="laurna, fondatrice"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -51,7 +51,7 @@ export function AboutPreview() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="mt-6 leading-relaxed text-muted-foreground"
             >
-              {"Laurnae \u00c9clat d\u2019Ongles est n\u00e9e d\u2019une passion pour l\u2019art de l\u2019onglerie. Chaque cr\u00e9ation est r\u00e9alis\u00e9e avec soin, pr\u00e9cision et cr\u00e9ativit\u00e9 pour sublimer vos mains et refl\u00e9ter votre personnalit\u00e9."}
+              {"Laurna \u00c9clat d\u2019Ongles est n\u00e9e d\u2019une passion pour l\u2019art de l\u2019onglerie. Chaque cr\u00e9ation est r\u00e9alis\u00e9e avec soin, pr\u00e9cision et cr\u00e9ativit\u00e9 pour sublimer vos mains et refl\u00e9ter votre personnalit\u00e9."}
             </motion.p>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}

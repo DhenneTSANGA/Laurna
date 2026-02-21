@@ -3,12 +3,12 @@ import { Star } from "lucide-react"
 const testimonials = [
   {
     name: "Sarah M.",
-    text: "Un travail exceptionnel ! Mes ongles n\u2019ont jamais \u00e9t\u00e9 aussi beaux. Laurnae est une vraie artiste, je recommande \u00e0 100%.",
+    text: "Un travail exceptionnel ! Mes ongles n\u2019ont jamais \u00e9t\u00e9 aussi beaux. laurna est une vraie artiste, je recommande \u00e0 100%.",
     rating: 5,
   },
   {
     name: "Am\u00e9lie D.",
-    text: "Toujours satisfaite de mes rendez-vous chez Laurnae. La qualit\u00e9 est au rendez-vous et l\u2019accueil est chaleureux.",
+    text: "Toujours satisfaite de mes rendez-vous chez laurna. La qualit\u00e9 est au rendez-vous et l\u2019accueil est chaleureux.",
     rating: 5,
   },
   {
