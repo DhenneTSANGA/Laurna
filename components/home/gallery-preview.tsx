@@ -100,18 +100,18 @@ export function GalleryPreview() {
               <X className="h-10 w-10" />
             </motion.button>
 
-            {/* Conteneur de la vidéo avec animation de zoom */}
+            {/* Conteneur de la vidéo avec animation de zoom - Format TikTok 9:16 */}
             <motion.div 
               initial={{ scale: 0.85, opacity: 0, y: 20 }}
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.85, opacity: 0, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative aspect-video w-full max-w-5xl overflow-hidden rounded-2xl bg-black shadow-2xl"
+              className="relative aspect-[9/16] w-full max-w-[min(90vw,450px)] h-auto max-h-[90vh] overflow-hidden rounded-2xl bg-black shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <video
                 src={lightboxVideo}
-                className="h-full w-full"
+                className="h-full w-full object-cover"
                 controls
                 autoPlay
                 playsInline

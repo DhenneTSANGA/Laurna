@@ -139,16 +139,18 @@ export function GalleryGrid() {
             >
               <X className="h-8 w-8" />
             </button>
+            {/* Conteneur de la vidéo avec animation de zoom - Format TikTok 9:16 */}
             <motion.div 
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="relative aspect-video w-full max-w-5xl"
+              initial={{ scale: 0.85, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.85, opacity: 0, y: 20 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="relative aspect-[9/16] w-full max-w-[min(90vw,450px)] h-auto max-h-[90vh] overflow-hidden rounded-2xl bg-black shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             >
               <video
                 src={lightboxVideo}
-                className="h-full w-full rounded-xl"
+                className="h-full w-full object-cover"
                 controls
                 autoPlay
                 playsInline
