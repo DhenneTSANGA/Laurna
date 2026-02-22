@@ -75,6 +75,7 @@ export function AProposContent() {
                 alt="Laurna, fondatrice"
                 fill
                 className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </motion.div>
             <div className="lg:w-1/2">

@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { X, Play } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, useInView } from "framer-motion"
 
 const categories = ["Tout", "Gel", "Nail Art", "Extensions", "French"]
 
@@ -19,6 +19,59 @@ const galleryItems = [
   { videoSrc: "/videos/8.mp4", alt: "Ongles gel naturels", category: "Gel" },
   { videoSrc: "/videos/9.mp4", alt: "Extensions longues", category: "Extensions" },
 ]
+
+function VideoCard({ item, index, onClick }: { item: typeof galleryItems[0], index: number, onClick: () => void }) {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const isInView = useInView(videoRef, { margin: "0px 0px 200px 0px" })
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isInView) {
+        videoRef.current.play().catch(() => {})
+      } else {
+        videoRef.current.pause()
+      }
+    }
+  }, [isInView])
+
+  return (
+    <motion.button
+      layout
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-50px" }}
+      whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+      transition={{ 
+        duration: 0.4, 
+        delay: (index % 3) * 0.1 
+      }}
+      onClick={onClick}
+      className="group relative aspect-square overflow-hidden rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 touch-manipulation"
+      aria-label={`Voir la vidéo : ${item.alt}`}
+    >
+      {/* Video Preview - Optimized for mobile */}
+      <video
+        ref={videoRef}
+        src={isInView ? item.videoSrc : undefined}
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+      <div className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/30">
+        <div className="bg-primary/80 p-4 rounded-full opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
+          <Play className="h-6 w-6 text-primary-foreground fill-current" />
+        </div>
+      </div>
+      <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-foreground/60 to-transparent">
+        <span className="text-sm font-medium text-background">
+          {item.alt}
+        </span>
+      </div>
+    </motion.button>
+  )
+}
 
 export function GalleryGrid() {
   const [activeCategory, setActiveCategory] = useState("Tout")
@@ -62,42 +115,12 @@ export function GalleryGrid() {
         >
           <AnimatePresence mode='popLayout'>
             {filteredItems.map((item, index) => (
-              <motion.button
-                layout
+              <VideoCard 
                 key={`${item.videoSrc}-${index}`}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-50px" }}
-                whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
-                transition={{ 
-                  duration: 0.4, 
-                  delay: (index % 3) * 0.1 
-                }}
+                item={item}
+                index={index}
                 onClick={() => setLightboxVideo(item.videoSrc)}
-                className="group relative aspect-square overflow-hidden rounded-2xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 touch-manipulation"
-                aria-label={`Voir la vidéo : ${item.alt}`}
-              >
-                {/* Video Preview - Optimized for mobile */}
-                <video
-                  src={item.videoSrc}
-                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  muted
-                  loop
-                  playsInline
-                  autoPlay
-                  preload="metadata"
-                />
-                <div className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/30">
-                  <div className="bg-primary/80 p-4 rounded-full opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100">
-                    <Play className="h-6 w-6 text-primary-foreground fill-current" />
-                  </div>
-                </div>
-                <div className="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-foreground/60 to-transparent">
-                  <span className="text-sm font-medium text-background">
-                    {item.alt}
-                  </span>
-                </div>
-              </motion.button>
+              />
             ))}
           </AnimatePresence>
         </motion.div>

@@ -1,9 +1,9 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { ArrowRight, Play, X } from "lucide-react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, useInView } from "framer-motion"
 
 const videos = [
   { src: "/videos/1.mp4", alt: "Pose gel rose nude" },
@@ -11,6 +11,49 @@ const videos = [
   { src: "/videos/3.mp4", alt: "Extensions chrome doré" },
   { src: "/videos/4.mp4", alt: "French manucure classique" },
 ]
+
+function PreviewVideoCard({ video, index, onClick }: { video: typeof videos[0], index: number, onClick: () => void }) {
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const isInView = useInView(videoRef, { margin: "0px 0px 200px 0px" })
+
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isInView) {
+        videoRef.current.play().catch(() => {})
+      } else {
+        videoRef.current.pause()
+      }
+    }
+  }, [isInView])
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      onClick={onClick}
+      className="group relative aspect-square overflow-hidden rounded-2xl cursor-pointer touch-manipulation"
+      role="button"
+      aria-label={`Voir la vidéo : ${video.alt}`}
+      tabIndex={0}
+    >
+      <video
+        ref={videoRef}
+        src={isInView ? video.src : undefined}
+        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      />
+      <div className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/20">
+        <Play className="h-10 w-10 text-background opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 fill-current" />
+      </div>
+    </motion.div>
+  )
+}
 
 export function GalleryPreview() {
   const [lightboxVideo, setLightboxVideo] = useState<string | null>(null)
@@ -50,32 +93,12 @@ export function GalleryPreview() {
 
         <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {videos.map((video, index) => (
-            <motion.div
+            <PreviewVideoCard 
               key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              video={video}
+              index={index}
               onClick={() => setLightboxVideo(video.src)}
-              className="group relative aspect-square overflow-hidden rounded-2xl cursor-pointer touch-manipulation"
-              role="button"
-              aria-label={`Voir la vidéo : ${video.alt}`}
-              tabIndex={0}
-            >
-              <video
-                src={video.src}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-                muted
-                loop
-                playsInline
-                autoPlay
-                preload="metadata"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-foreground/0 transition-colors duration-300 group-hover:bg-foreground/20">
-                <Play className="h-10 w-10 text-background opacity-0 scale-75 transition-all duration-300 group-hover:opacity-100 group-hover:scale-100 fill-current" />
-              </div>
-            </motion.div>
+            />
           ))}
         </div>
       </div>
