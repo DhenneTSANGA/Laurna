@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { Send, Check } from "lucide-react"
 
+import { motion } from "framer-motion"
+
 const prestations = [
   "Pose Gel",
   "Extensions",
@@ -22,7 +24,11 @@ export function ReservationForm() {
 
   if (submitted) {
     return (
-      <div className="mt-8 flex flex-col items-center py-12 text-center">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="mt-8 flex flex-col items-center py-12 text-center"
+      >
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
           <Check className="h-8 w-8 text-primary" />
         </div>
@@ -38,7 +44,7 @@ export function ReservationForm() {
         >
           {"Faire une nouvelle r\u00e9servation"}
         </button>
-      </div>
+      </motion.div>
     )
   }
 
@@ -130,7 +136,7 @@ export function ReservationForm() {
           id="message"
           name="message"
           rows={4}
-          placeholder="Pr\u00e9cisez vos souhaits ou posez vos questions..."
+          placeholder="Precisez vos souhaits ou posez vos questions..."
           className="resize-none rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>

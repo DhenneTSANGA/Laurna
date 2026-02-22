@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { Send, Check } from "lucide-react"
 
+import { motion } from "framer-motion"
+
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false)
 
@@ -13,7 +15,11 @@ export function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="mt-8 flex flex-col items-center py-12 text-center">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="mt-8 flex flex-col items-center py-12 text-center"
+      >
         <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
           <Check className="h-8 w-8 text-primary" />
         </div>
@@ -29,7 +35,7 @@ export function ContactForm() {
         >
           {"Envoyer un autre message"}
         </button>
-      </div>
+      </motion.div>
     )
   }
 
@@ -73,7 +79,7 @@ export function ContactForm() {
           name="subject"
           type="text"
           required
-          placeholder="L\u2019objet de votre message"
+          placeholder="Votre message"
           className="rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>
@@ -87,7 +93,7 @@ export function ContactForm() {
           name="message"
           rows={5}
           required
-          placeholder="\u00c9crivez votre message ici..."
+          placeholder="Decrivez votre message ici..."
           className="resize-none rounded-lg border border-input bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
         />
       </div>
