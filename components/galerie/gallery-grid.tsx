@@ -134,12 +134,12 @@ export function GalleryGrid() {
           <p className="text-muted-foreground">
             {"Retrouvez encore plus de réalisations sur "}
             <a
-              href="https://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40laurnaeclatdongle%3F_r%3D1%26_t%3DZS-93OHhpYbfhl%26fbclid%"
+              href="https://www.tiktok.com/@laurnaeclatdongle/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-primary underline underline-offset-4"
             >
-              {"notre Instagram"}
+              {"notre Tiktok"}
             </a>
           </p>
         </motion.div>

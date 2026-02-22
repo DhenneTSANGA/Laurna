@@ -103,7 +103,7 @@ export function AProposContent() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                  {"laurna \u00c9clat d\u2019Ongles est n\u00e9e de la volont\u00e9 d\u2019offrir une exp\u00e9rience unique : un moment de d\u00e9tente o\u00f9 chaque femme peut se sentir belle et valoris\u00e9e. Chaque rendez-vous est une cr\u00e9ation sur mesure."}
+                  {"Laurna \u00c9clat d\u2019Ongles est n\u00e9e de la volont\u00e9 d\u2019offrir une exp\u00e9rience unique : un moment de d\u00e9tente o\u00f9 chaque femme peut se sentir belle et valoris\u00e9e. Chaque rendez-vous est une cr\u00e9ation sur mesure."}
                 </motion.p>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}

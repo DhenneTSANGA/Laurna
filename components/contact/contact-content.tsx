@@ -124,7 +124,7 @@ export function ContactContent() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    href="ttps://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40laurnaclatdongle%3F_r%3D1%26_t%3DZS-93OHhpYbfhl%26fbclid%"
+                    href="https://www.instagram.com/laurnaeclatdongles/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-full border border-border transition-colors hover:bg-primary/10 hover:text-primary"
@@ -137,7 +137,7 @@ export function ContactContent() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: 0.5 }}
-                    href="https://www.tiktok.com/link/v2?aid=1988&lang=fr&scene=bio_url&target=https%3A%2F%2Fwww.instagram.com%2Flaurnaclatdongles%3Figsh%3DMXgxeHY3bXdxenlrcw%253D%253D%26utm_source%3Dqr"
+                    href="https://www.tiktok.com/@laurnaeclatdongles/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex h-12 w-12 items-center justify-center rounded-full border border-border transition-colors hover:bg-primary/10 hover:text-primary"

@@ -91,7 +91,7 @@ export function Footer() {
             </h3>
             <div className="flex items-center gap-4">
               <a
-                href="ttps://l.instagram.com/?u=https%3A%2F%2Fwww.tiktok.com%2F%40laurnaclatdongle%3F_r%3D1%26_t%3DZS-93OHhpYbfhl%26fbclid%"
+                href="https://www.instagram.com/laurnaeclatdongles/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-background/20 opacity-70 transition-opacity hover:opacity-100"
@@ -100,7 +100,7 @@ export function Footer() {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://www.tiktok.com/link/v2?aid=1988&lang=fr&scene=bio_url&target=https%3A%2F%2Fwww.instagram.com%2Flaurnaclatdongles%3Figsh%3DMXgxeHY3bXdxenlrcw%253D%253D%26utm_source%3Dqr"
+                href="https://www.tiktok.com/@laurnaeclatdongle"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-background/20 opacity-70 transition-opacity hover:opacity-100"
