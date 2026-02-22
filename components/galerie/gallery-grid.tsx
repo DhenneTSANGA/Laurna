@@ -14,10 +14,10 @@ const galleryItems = [
   { videoSrc: "/videos/3.mp4", alt: "Extensions chrome doré", category: "Extensions" },
   { videoSrc: "/videos/4.mp4", alt: "French manucure classique", category: "French" },
   { videoSrc: "/videos/5.mp4", alt: "Effet marbre nude", category: "Gel" },
-  { videoSrc: "/videos/6.mp4", alt: "Design bordeaux pailleté", category: "Nail Art" },
+  { videoSrc: "/videos/11.mp4", alt: "Design bordeaux pailleté", category: "Nail Art" },
   { videoSrc: "/videos/7.mp4", alt: "Pose gel élégante", category: "Gel" },
   { videoSrc: "/videos/8.mp4", alt: "Ongles gel naturels", category: "Gel" },
-  { videoSrc: "/videos/10.mp4", alt: "Extensions longues", category: "Extensions" },
+  { videoSrc: "/videos/9.mp4", alt: "Extensions longues", category: "Extensions" },
 ]
 
 export function GalleryGrid() {

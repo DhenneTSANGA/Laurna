@@ -34,7 +34,7 @@ export function Navbar() {
           <div className="relative flex h-14 w-14 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-border transition-transform group-hover:scale-105 md:h-20 md:w-20">
             <Image 
               src="/laurnalogo.jpeg" 
-              alt="Logo laurna" 
+              alt="Logo Laurna" 
               fill
               className="object-cover"
               priority

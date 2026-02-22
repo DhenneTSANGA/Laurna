@@ -72,7 +72,7 @@ export function AProposContent() {
             >
               <Image
                 src="/laurna.jpg"
-                alt="laurna, fondatrice"
+                alt="Laurna, fondatrice"
                 fill
                 className="object-cover"
               />

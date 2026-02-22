@@ -13,7 +13,7 @@ export function Footer() {
               <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-white/10 transition-transform group-hover:scale-105">
                 <Image 
                   src="/laurnalogo.jpeg" 
-                  alt="Logo laurna" 
+                  alt="Logo Laurna" 
                   fill
                   className="object-cover"
                 />
@@ -71,7 +71,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm opacity-70">
                 <Phone className="h-4 w-4" />
-                <span>+241 077 00 00 00</span>
+                <span>+241 076 58 41 55</span>
               </li>
               <li className="flex items-center gap-2 text-sm opacity-70">
                 <Mail className="h-4 w-4" />
@@ -116,7 +116,7 @@ export function Footer() {
 
         <div className="mt-16 border-t border-background/10 pt-8 text-center">
           <p className="text-xs opacity-50">
-            {"© 2026 laurna \u00c9clat d\u2019Ongles. Tous droits r\u00e9serv\u00e9s."}
+            {"© 2026 Laurna \u00c9clat d\u2019Ongles. Tous droits r\u00e9serv\u00e9s."}
           </p>
         </div>
       </div>

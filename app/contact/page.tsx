@@ -5,15 +5,15 @@ import { Phone, Mail, MapPin, Instagram, Clock } from "lucide-react"
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez laurna \u00c9clat d\u2019Ongles. T\u00e9l\u00e9phone, email, r\u00e9seaux sociaux ou formulaire de contact.",
+    "Contactez Laurna \u00c9clat d\u2019Ongles. T\u00e9l\u00e9phone, email, r\u00e9seaux sociaux ou formulaire de contact.",
 }
 
 const contactInfo = [
   {
     icon: Phone,
     label: "T\u00e9l\u00e9phone",
-    value: "+241 077 00 00 00",
-    href: "tel:+2411077000000",
+    value: "+241 076 58 41 55",
+    href: "tel:+241076584155",
   },
   {
     icon: Mail,
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Localisation laurna"
+                  title="Localisation Laurna"
                 />
               </div>
             </div>
